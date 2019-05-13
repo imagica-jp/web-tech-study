@@ -194,3 +194,15 @@ footer address{
     color: #fff;
     letter-spacing: 5px;
 }
+footer a {
+    color:rgb(0, 255, 170);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+footer a:visited{
+    color:rgb(0, 255, 170);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
