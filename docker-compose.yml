@@ -12,10 +12,12 @@ services:
     stdin_open: true
     tty: true
   mysql:
-    image: mysql:5.7
+    build:
+      context: .
+      dockerfile: Dockerfile-MySQL
     container_name: mysql
     environment:
       - MYSQL_ROOT_PASSWORD=password
-      - MYSQL_DATABASE=php
+      - TZ=Asia/Tokyo
     volumes:
       - ./db:/var/lib/mysql
