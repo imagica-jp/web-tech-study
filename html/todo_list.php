@@ -23,7 +23,7 @@
 
     <?php
     $stmt = $pdo->query("SELECT * FROM todo_list");
-    echo "<table><tr><th>内容</th><th>チェック</th><th>期限</th><th>優先度</th></tr>";
+    echo "<table><tr><th>内容</th><th>チェック</th><th>期限</th><th>優先度</th><th></th></tr>";
     while($row = $stmt -> fetch(PDO::FETCH_ASSOC)) {
         echo "<tr>";
         echo "<td>";
@@ -40,6 +40,10 @@
 
         echo "<td>";
         echo $row['priority'];
+        echo "</td>";
+
+        echo "<td>";
+        echo '<a href="/edit_todo_list.php?id=' . $row['id'] . '">編集</a>';
         echo "</td>";
         echo "</tr>";
     }
