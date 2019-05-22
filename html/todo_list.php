@@ -47,6 +47,8 @@
 
 
     ?>
-
+    <p>
+        <a href="/new_todo_list.html">新規作成</a>
+    </p>
 </body>
 </html>

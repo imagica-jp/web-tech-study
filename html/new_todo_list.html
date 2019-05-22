@@ -21,6 +21,14 @@
                 <input type="radio" name="done" id="form-not-done" value="0"><label for="form-not-done">未完了</label>
                 <input type="radio" name="done" id="form-done" value="1"><label for="form-done">完了</label>
             </div>
+            <div>
+                <label for="form-date">期限日</label>
+                <input type="date" name="expiration" id="form-date">
+            </div>
+            <div>
+                <label for="form-priority">優先度<small>(必須)</small></label>
+                <input required type="number" name="priority" min="1" max="10" id="form-priority">
+            </div>
 
             <input type="submit" name="submit" value="新規作成">
         </form>
