@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MYSQL</title>
+    <title>Penguin</title>
     <!-- <link href="css/reset.css" rel="stylesheet" type="text/css"> -->
     <!-- <link href="css/css.css" rel="stylesheet" type="text/css"> -->
     <?php
@@ -43,7 +43,8 @@
         echo "</td>";
 
         echo "<td>";
-        echo '<a href="/edit_todo_list.php?id=' . $row['id'] . '">編集</a>';
+        echo '<a href="/edit_todo_list.php?id=' . $row['id'] . '">編集</a> ';
+        echo '<a href="/delete_todo_list.php?id=' . $row['id'] . '">削除</a>';
         echo "</td>";
         echo "</tr>";
     }
