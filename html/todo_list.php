@@ -31,7 +31,7 @@
         echo "</td>";
 
         echo "<td>";
-        echo $row['done'];
+        echo boolval($row['done']) ? '完了' : '未完了';
         echo "</td>";
 
         echo "<td>";
